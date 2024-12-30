@@ -1,0 +1,30 @@
+from selenium.webdriver.common.by import By
+
+
+class OrderLocators:
+    FIELD_NAME = (By.XPATH, '//input[@placeholder="* Имя"]')
+    FIELD_SURNAME =(By.XPATH, '//input[@placeholder="* Фамилия"]')
+    FIELD_ADRESS = (By.XPATH, '//input[@placeholder="* Адрес: куда привезти заказ"]')
+    FIELD_METRO = (By.XPATH, '//input[@placeholder="* Станция метро"]')
+    FIELD_PHONE = (By.XPATH, '//input[@placeholder="* Телефон: на него позвонит курьер"]')
+    BUTTON_NEXT = (By.XPATH, '//button[contains(text(),"Далее")]')
+    ORDER_BUT_UP = (By.XPATH, '//button[@class="Button_Button__ra12g"]')
+    ORDER_BUT_DOWN = (By.XPATH, '//button[@class="Button_Button__ra12g Button_Middle__1CSJM"]')
+    FIELD_METRO_STATION_1 = (By.XPATH, '//*[text() = "Сокольники"]')
+    FIELD_METRO_STATION_2 = (By.XPATH, '//*[text() = "Лубянка"]')
+    FIELD_DATE = (By.XPATH, '//input[@placeholder="* Когда привезти самокат"]')
+    FIELD_DATE_SELECT_31 = (By.XPATH, '//div[@class = "react-datepicker__day react-datepicker__day--031"]')
+    FIELD_DATE_SELECT_02 = (By.XPATH, '//div[@class = "react-datepicker__day react-datepicker__day--002 react-datepicker__day--outside-month"]')
+    FIELD_DAYS = (By.XPATH, '//div[contains(text(),"* Срок аренды")]')
+    FIELD_DAYS_SELECT_1 = (By.XPATH, '//*[text() = "двое суток"]')
+    FIELD_DAYS_SELECT_2 = (By.XPATH, '//*[text() = "четверо суток"]')
+    FIELD_COLOR_1 = (By.XPATH, '//input[@id="black"]')
+    FIELD_COLOR_2 = (By.XPATH, '//input[@id="grey"]')
+    ORDER_BUT_YES = (By.XPATH, '//button[contains(text(),"Да")]')
+    ORDER_SUCCESS = (By.XPATH, '//div[contains(text(),"Заказ оформлен")]')
+    CHECK_STATUS_BUTTON = (By.XPATH, '//button[contains(text(),"Посмотреть статус")]')
+    SCOOTER_BUTTON = (By.XPATH, '//img[@alt = "Scooter"]')
+    MAIN_PAGE_CHECK = (By.XPATH, '//div[contains(text(),"Привезём его прямо к вашей двери")]')
+    YA_BUTTON = (By.XPATH, '//img[@alt = "Yandex"]')
+    DZEN_LOGO = (By.CLASS_NAME, "dzen-layout--desktop-base-header__logoContainer-pu dzen-layout--desktop-base-header__isMorda-2n")
+
